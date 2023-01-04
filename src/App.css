@@ -1,0 +1,23 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: #292929;
+  color: white;
+  font-family: Avenir;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, p, hr {
+  opacity: 0.7;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
