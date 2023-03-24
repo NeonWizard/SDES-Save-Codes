@@ -116,7 +116,13 @@ console.log(`${collisions} total collisions.`);
 
 // ---------
 
-// const BufferCrypt = require("../buffercrypt/index.js");
+// this is messed up man
+const BufferCrypt = require("../buffercrypt/index.js");
+const out = BufferCrypt.sdesEncrypt("1111110110", Buffer.from([7]));
+console.log([...out]);
+
+const out2 = BufferCrypt.sdesDecrypt("1111110110", Buffer.from([154]));
+console.log([...out2]);
 
 // let actions = ["01987", "00020", "00030", "00000"];
 

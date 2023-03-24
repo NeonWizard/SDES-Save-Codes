@@ -18,7 +18,7 @@
   padding: 6px 0px;
   background-color: black;
   font-size: 1.65em;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .keypad-keys {
@@ -47,4 +47,18 @@
 .key:hover {
   background-color: #444;
   cursor: pointer;
+}
+
+.clr-button {
+  background-color: #c00;
+}
+.clr-button:hover {
+  background-color: #900;
+}
+
+.ok-button {
+  background-color: #060;
+}
+.ok-button:hover {
+  background-color: #050;
 }
