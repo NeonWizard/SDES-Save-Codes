@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Keypad from "./Keypad/Keypad";
 import { intToByteArray } from "./utils/utils";
-import { decrypt, encrypt, sdes } from "./SDES/SDES2";
+import { decrypt, encrypt } from "./SDES/SDES2";
 
 const SaveCodes = () => {
-  const [playerKey, setPlayerKey] = useState("");
+  const [playerKey, setPlayerKey] = useState(localStorage.getItem("playerKey"));
 
   const [decodeValue, setDecodeValue] = useState("");
   const [encodeValue, setEncodeValue] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("playerKey", playerKey);
+  }, [playerKey]);
 
   const doEncode = () => {
     if (decodeValue.length !== 5 || parseInt(decodeValue) > Math.pow(2, 16)) {
