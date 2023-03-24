@@ -1,0 +1,50 @@
+.keypad {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #555;
+  width: fit-content;
+  padding: 12px;
+
+  background-color: #1a1a1a;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.keypad-display {
+  margin-bottom: 12px;
+  padding: 6px 0px;
+  background-color: black;
+  font-size: 1.65em;
+  letter-spacing: 4px;
+}
+
+.keypad-keys {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+
+  width: 42px;
+  height: 38px;
+
+  background-color: black;
+  color: white;
+  border: 1px dashed #444;
+}
+
+.key:hover {
+  background-color: #444;
+  cursor: pointer;
+}

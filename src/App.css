@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
 
-  background-color: #292929;
+  background-color: #131515;
   color: white;
   font-family: Avenir;
 }
@@ -20,4 +20,26 @@ h1, h2, h3, p, hr {
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content > div:last-child {
+  border-left: 1px solid white;
+}
+
+.main-content > div {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  /* border: 1px solid lime; */
 }
